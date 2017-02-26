@@ -3,6 +3,7 @@
   "type": "library",
   "description": "A simple library which provide you possibility to hydrate an object with private, protected properties without using reflection.",
   "license": "MIT",
+  "version": "0.1.0",
   "authors": [
     {
       "name": "Rostyslav Tymoshenko",
