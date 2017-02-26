@@ -1,0 +1,8 @@
+## Directory
+.idea/
+vendor/
+
+## File
+composer.lock
+phpunit.xml
+test-index.php
