@@ -1,4 +1,6 @@
-# Hydrator library
+# Hydrator library 
+[![Build Status](https://travis-ci.org/Krifollk/hydrator.svg?branch=master)](https://travis-ci.org/Krifollk/hydrator)
+
 This is a simple library which provide you possibility to hydrate an object with private, protected properties without using reflection.
 
 ## Requirements
