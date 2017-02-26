@@ -1,0 +1,29 @@
+{
+  "name": "krifollk/hydrator",
+  "type": "library",
+  "description": "A simple library which provide you possibility to hydrate an object with private, protected properties without using reflection.",
+  "license": "MIT",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Rostyslav Tymoshenko",
+      "email": "krifollk@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "6.0.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Krifollk\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Krifollk\\Hydrator\\Test\\": "test/"
+    }
+  }
+}
