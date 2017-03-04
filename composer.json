@@ -1,9 +1,9 @@
 {
   "name": "krifollk/hydrator",
   "type": "library",
-  "description": "A simple library which provide you possibility to hydrate an object with private, protected properties without using reflection.",
+  "description": "A simple library which provide you possibility to hydrate and extract an object properties (private, protected) without using reflection.",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "authors": [
     {
       "name": "Rostyslav Tymoshenko",
@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Krifollk\\": "src/"
+      "Krifollk\\Hydrator\\": "src/"
     }
   },
   "autoload-dev": {

@@ -14,7 +14,7 @@ namespace Krifollk\Hydrator;
 /**
  * Interface PropertyResolverInterface
  *
- * @package Krifollk
+ * @package Krifollk\Hydrator
  */
 interface PropertyResolverInterface
 {

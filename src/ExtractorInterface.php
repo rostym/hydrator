@@ -12,19 +12,29 @@ declare(strict_types = 1);
 namespace Krifollk\Hydrator;
 
 /**
- * Interface HydratorInterface
+ * Interface ExtractorInterface
  *
  * @package Krifollk\Hydrator
  */
-interface HydratorInterface
+interface ExtractorInterface
 {
     /**
-     * Hydrate an object with provided properties data
+     * Extract property from provided object
+     *
+     * @param object $object
+     * @param string $property
+     *
+     * @return mixed
+     */
+    public function extractProperty($object, string $property);
+
+    /**
+     * Extract properties from provided object
      *
      * @param object $object
      * @param array  $properties
      *
-     * @return void
+     * @return array
      */
-    public function hydrate($object, array $properties);
+    public function extractProperties($object, array $properties): array;
 }
