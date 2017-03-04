@@ -11,7 +11,9 @@ declare(strict_types = 1);
 
 namespace Krifollk\Hydrator\Test;
 
-use Krifollk\Hydrator;
+use Krifollk\Hydrator\Hydrator;
+use Krifollk\Hydrator\PropertyResolverInterface;
+use Krifollk\Hydrator\Test\HydratorTest\TestClass;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -30,7 +32,7 @@ class HydratorTest extends TestCase
     public function hydrate(array $properties)
     {
         $hydrator = new Hydrator();
-        $testClass = new Hydrator\Test\HydratorTest\TestClass();
+        $testClass = new TestClass();
 
         self::assertEquals(null, $testClass->getPrivateProperty());
         self::assertEquals(null, $testClass->getPublicProperty());
@@ -54,7 +56,7 @@ class HydratorTest extends TestCase
     {
         $resolverMock = $this->createPropertyResolverMock($returnMap);
         $hydrator = new Hydrator($resolverMock);
-        $testClass = new Hydrator\Test\HydratorTest\TestClass();
+        $testClass = new TestClass();
 
         self::assertEquals(null, $testClass->getPrivateProperty());
         self::assertEquals(null, $testClass->getPublicProperty());
@@ -106,7 +108,7 @@ class HydratorTest extends TestCase
      */
     protected function createPropertyResolverMock(array $returnMap) : \PHPUnit_Framework_MockObject_MockObject
     {
-        $resolver = $this->getMockBuilder(Hydrator\PropertyResolverInterface::class);
+        $resolver = $this->getMockBuilder(PropertyResolverInterface::class);
         $resolverMock = $resolver->setMethods(['resolve'])->getMock();
         $resolverMock
             ->expects(self::exactly(3))

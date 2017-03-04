@@ -9,12 +9,12 @@
 
 declare(strict_types = 1);
 
-namespace Krifollk;
+namespace Krifollk\Hydrator;
 
 /**
  * Interface HydratorInterface
  *
- * @package Krifollk
+ * @package Krifollk\Hydrator
  */
 interface HydratorInterface
 {

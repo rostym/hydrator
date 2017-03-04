@@ -25,7 +25,7 @@ class User
     protected $surname;
 }
 
-$hydrator = new Krifollk\Hydrator();
+$hydrator = new Krifollk\Hydrator\Hydrator();
 $user = new User();
 
 $hydrator->hydrate($user, ['name' => 'John', 'surname' => 'Doe']);

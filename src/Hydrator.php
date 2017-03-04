@@ -9,14 +9,12 @@
 
 declare(strict_types = 1);
 
-namespace Krifollk;
-
-use Krifollk\Hydrator\PropertyResolverInterface;
+namespace Krifollk\Hydrator;
 
 /**
  * Class Hydrator
  *
- * @package Krifollk
+ * @package Krifollk\Hydrator
  */
 class Hydrator implements HydratorInterface
 {
